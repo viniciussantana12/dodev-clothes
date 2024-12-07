@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas - Home</title>
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+  <div class="home">
+    <nav>
+      <ul class="nav-itens">
+        <li>
+          <a href="index.html" class="menu">Home</a>
+        </li>
+        <li>
+          <a href="sobreNos.html" class="menu">Sobre nós</a>
+        </li>
+      </ul>
+
+      <div class="btn">
+
+        <a href="./carrinho.html" ><i class="fa-solid fa-cart-shopping fa-xl" id="imgC"></i></a>
+
+      </div>
+    </nav>
+    <section>
+      <div class="apresentacao">
+        <h1>Seu Armario tech.</h1>
+        <p>Navegue e se inspire no mundo da moda.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="imgPrincipal">
+        <img id="imgbtn" src="./imagens/camiseta3.jfif" alt="">
+        <p id="camisetaPreta">Calça jeans</p>
+
+      </div>
+    </section>
+    <div class="modelos">
+      <h2>Principais modelos.</h2>
+    </div>
+    <section class="cards">
+      <div class="slots">
+        <div class="img-container">
+          <img src="./imagens/camiseta2.jfif" alt="moletombranco" id="imagem1">
+        </div>
+        <h4 id="moletom">camisa preta</h4>
+        <div class="botoes">
+          <button class="comprar" id="btn2"><a href="">Comprar</a></button>
+        </div>
+      </div>
+      <div class="slots">
+        <div class="img-container">
+          <img src="./imagens/camisa-manga-longa.jfif" alt="" id="imagem2">
+        </div>
+        <h4 id="camisaBasica">moletom branco</h4>
+        <div class="botoes">
+          <button class="comprar" id="btn3"><a href="">Comprar</a></button>
+        </div>
+      </div>
+      <div class="slots">
+        <div class="img-container">
+          <img src="./imagens/moletom.jfif" alt="" id="imagem3">
+        </div>
+        <h4 id="moletomverde">moletom preto</h4>
+        <div class="botoes">
+          <button id="btn4" class="comprar"><a href="">Comprar</a></button>
+        </div>
+      </div>
+    </section>
+    <h2 class="promo">Receba promoções</h2>
+    <section class="formulario">
+      <form action="contato" class="contato" id="contato">
+        <div class="row">
+          <input type="text" name="nome" id="inome" placeholder="Insira Seu Nome" required minlength="3" maxlength="35">
+          <input type="email" id="iemail" placeholder="Insira seu E-mail" required>
+        </div>
+        <div class="row">
+          <input type="tel" name="telefone" id="itelefone" placeholder="Insira seu Telefone" maxlength="11" minlength="9" required>
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+<script src="./js/home.js"></script>
+</body>
+</html>
