@@ -4,42 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
+    <link rel="stylesheet" href="./css/produto.css">
 </head>
+
 <body>
     <ul class="nav-itens">
         <li>
             <a href="index.html" class="menu">Home</a>
         </li>
         <li>
-            <a href="sobre.html" class="menu">Sobre Nós</a>
+            <a href="sobreNos.html" class="menu">Sobre Nós</a>
         </li>
     </ul>
     <section class="tudo">
         <section class="imagens">
             <div class="divPequenas">
                 <div class="img">
-                    <img id="img1" src="" alt="">
+                    <img id="img1" src="./imagens/camisa-manga-longa.jfif" alt="">
                 </div>
                 <div class="img">
-                    <img id="img2" src="" alt="">
+                    <img id="img2" src="./imagens/camiseta1.jfif" alt="">
                 </div>
                 <div class="img">
-                    <img id="img3" src="" alt="">
+                    <img id="img3" src="./imagens/camiseta2.jfif" alt="">
                 </div>
             </div>
             <div class="divGrande">
                 <div class="img">
-                    <img id="img4" src="" alt="">
+                    <img id="img4" src="./imagens/camiseta3.jfif" alt="">
                 </div>
             </div>
         </section>
         <section class="infos">
             <h1 id="roupa"></h1>
             <h2 id="valor"></h2>
-            <input type="number" name="iquantidade" value="1">
+            <select id="tamanho">
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+              </select>
+            <input type="number" name="quantidade" id="iquantidade" value="1">
             <button id="btnCarrinho">Adicionar ao carrinho</button>
         </section>
     </section>
-    <script src="./js/comprar.js"></script>
+    <script src="./js/produto.js"></script>
 </body>
 </html>
