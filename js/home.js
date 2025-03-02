@@ -38,7 +38,7 @@ const btn2 = document.getElementById('btn2')
 
 btn2.addEventListener('click', e => {
     
-    window.location.replace('./carrinho.html')
+    window.location.replace('./produto.html')
 
 window.localStorage.setItem('nome', roupas2.Produto)
 window.localStorage.setItem('valor', roupas2.Preco)
@@ -51,7 +51,7 @@ for(let i = 0; i < 4; i++) {
 const btn3 = document.getElementById('btn3')
 
 btn3.addEventListener('click', e => {
-    window.location.replace('./carrinho.html')
+    window.location.replace('./produto.html')
 
 window.localStorage.setItem('nome', roupas3.Produto)
 window.localStorage.setItem('valor', roupas3.Preco)
@@ -66,7 +66,7 @@ const btn4 = document.getElementById('btn4')
 
 btn4.addEventListener('click' , e => {
 
-    window.location.replace('./carrinho.html')
+    window.location.replace('./produto.html')
 
 window.localStorage.setItem('nome', roupas4.Produto)
 window.localStorage.setItem('valor', roupas4.Preco)
@@ -76,3 +76,37 @@ for(let i = 0; i < 4; i++) {
 }
 
 })
+
+
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = {
+        nome: form.querySelector('#inome').value,
+        email: form.querySelector('#iemail').value,
+        telefone: form.querySelector('#itelefone').value
+      };
+  
+      // Salvar no localStorage
+      localStorage.setItem('formData', JSON.stringify(formData));
+  
+      // Enviar para a API (substitua URL pela sua do DronaHQ)
+      fetch('https://apigenerator.dronahq.com/api/kfhoTqlm/lojaAPI', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    });
+  });
+
+  
