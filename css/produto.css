@@ -1,0 +1,134 @@
+   /* Reset e Configurações Globais */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Navegação */
+.nav-itens {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-itens a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-itens a:hover {
+    color: #ff5722;
+}
+
+/* Estrutura Geral */
+.tudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção de Imagens */
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.divPequenas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.img img:hover {
+    transform: scale(1.1);
+    border-color: #0056b3;
+}
+
+.divGrande img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Informações */
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.infos h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.infos h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+}
+
+.infos input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.infos button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.infos button:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
